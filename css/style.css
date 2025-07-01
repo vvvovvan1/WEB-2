@@ -38,10 +38,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 } */
 
-@font-face { 
+/* @font-face { 
 	font-family: "Montserrat"; 
 	src: url('../Montserrat[wght].ttf'); 
+} */
+
+@font-face { 
+	font-family: "Montserrat"; 
+	src: url('../fonts/Montserrat-Bold.ttf'); 
 }
+
+@font-face { 
+	font-family: "Montserrat-Italic"; 
+	src: url('../fonts/Montserrat-Italic.ttf'); 
+}
+
+@font-face { 
+	font-family: "Montserrat-Regular"; 
+	src: url('../fonts/Montserrat-Regular.ttf'); 
+}
+
+
 
 body {   
     -webkit-font-smoothing: antialiased;
@@ -51,11 +68,22 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6, header, nav {
+h1, h3, h4, h5, h6, nav {
   font-weight: 700;
 }
 
+h2 {
+    font-weight: 800;
+}
 
+p {
+    /* font-weight: 400;   */
+    font-family: "Montserrat-Regular";
+}
+
+i {
+    font-family: "Montserrat-Italic";
+}
 
 html {
     background-color: #fff;
