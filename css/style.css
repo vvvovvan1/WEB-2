@@ -44,9 +44,15 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 @font-face { 
-	font-family: "Montserrat"; 
+	font-family: "Montserrat-Bold"; 
 	src: url('../fonts/Montserrat-Bold.ttf'); 
 }
+
+@font-face { 
+	font-family: "Montserrat-ExtraBold"; 
+	src: url('../fonts/Montserrat-ExtraBold.ttf'); 
+}
+
 
 @font-face { 
 	font-family: "Montserrat-Italic"; 
@@ -62,27 +68,36 @@ h1, h2, h3, h4, h5, h6 {
 
 body {   
     -webkit-font-smoothing: antialiased;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Bold";
     /* background-color: antiquewhite; */
     /* padding-inline: 21%; */
     line-height: 1.6;
 }
 
-h1, h3, h4, h5, h6, nav {
-  font-weight: 700;
-}
-
 h2 {
-    font-weight: 800;
+       font-family: "Montserrat-ExtraBold";
+
 }
 
 p {
-    /* font-weight: 400;   */
+    font-family: "Montserrat-Regular";
+}
+
+p strong {
+    font-family: "Montserrat-Bold";
+
+}
+
+ul, ol {
     font-family: "Montserrat-Regular";
 }
 
 i {
     font-family: "Montserrat-Italic";
+}
+
+h1, h3, h4, h5, h6, nav, nav ul {
+  font-family: "Montserrat-Bold";
 }
 
 html {
